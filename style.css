@@ -25,7 +25,51 @@ body{
   background-color: #c5bdbd; /* Green */
   color: white;
 }
-.hey{
+.Sug{
   display: none;
-  height:fit-content
+  height:fit-content;
+  font-family:sans-serif;
+}
+.Sug h1{
+  font-size: 4vw;
+}
+.healthy{
+  display: none;
+}
+.healthy p{
+ color: rgb(0, 175, 23);
+ display: inline;
+}
+.slight{
+  display: none;
+}
+.slight p{
+ color: rgb(255, 208, 0);
+ display: inline;
+}
+.slight .atypical{
+color: black;
+font-weight: 200;
+}
+.medium{
+  display: none;
+}
+.medium p{
+ color: rgb(240, 98, 3);
+ display: inline;
+}
+.medium .med{
+  color: black;
+font-weight: 200;
+}
+.high{
+  display: none;
+}
+.high p{
+ color: rgb(255, 0, 0);
+ display: inline;
+}
+.high .situational{
+  color: black;
+font-weight: 200;
 }
