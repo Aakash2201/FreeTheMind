@@ -18,7 +18,11 @@ document.getElementById("quiz").addEventListener("submit", (e)=>{
   var q11 = document.quiz.question11.value; 
   var result=document.getElementById('result');
   var quiz= document.getElementById("quiz");
-  var hey=document.getElementsByClassName("hey")[0];
+  var Sug=document.getElementsByClassName("Sug")[0];
+  var healthy=document.getElementsByClassName("healthy")[0];
+  var slight=document.getElementsByClassName("slight")[0];
+  var medium=document.getElementsByClassName("medium")[0];
+  var high=document.getElementsByClassName("high")[0];
   // console.log(quiz.style.display);
   if (q1 == "Not good") {
     count = count + 2;
@@ -78,13 +82,29 @@ document.getElementById("quiz").addEventListener("submit", (e)=>{
   temp+=3;
   if(q11=="Loneliness")
   temp+=4;
-  
-  // console.log(count);
-  if(count>2){
+  if(count<5){
     quiz.style.display="none";
-    hey.style.display="block";
-  //  document.write('Your result is '+count+'. Not good so try to work on yourself');
+    Sug.style.display="block";
+    
+    healthy.style.display="block";
+  }
+  if(count>=5 && count<10){
+    quiz.style.display="none";
+    Sug.style.display="block";
+    
+    slight.style.display="block";
+  }
+  if(count>=10&&count<16){
+    quiz.style.display="none";
+    Sug.style.display="block";
+   
+    medium.style.display="block";
+  }
+  if(count>=16){
+    quiz.style.display="none";
+    Sug.style.display="block";
+    
+    high.style.display="block";
   }
 
 });
-
