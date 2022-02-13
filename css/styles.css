@@ -1,4 +1,13 @@
 
+.about
+{
+  text-align: center;
+  margin: 5% 15%;
+  color: grey;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
+}
 .yoga{
   background-color: #ADD8E6;
   background: linear-gradient(90deg, white,#ADD8E6);
